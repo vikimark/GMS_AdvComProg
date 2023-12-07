@@ -43,7 +43,7 @@
       );
     }
     else{
-      document.documentElement.style,setProperty(
+      document.documentElement.style.setProperty(
         '--curent-aqi-color', 'var(--bad-aqi-color)'
       );
     }
@@ -54,7 +54,11 @@
     const state = "Aichi";
     const country = "Japan";
 
-    const {aqi,temperature,humidity,wind} = await getAirQuality({city,state,country});
+    // const {aqi,temperature,humidity,wind} = await getAirQuality({city,state,country});
+    aqi = 25
+    temperature = 10
+    humidity = 59
+    wind = 0.45
     displayAirQuality({city,state,country,aqi,temperature,humidity,wind});
 
     setAirColor(aqi);
