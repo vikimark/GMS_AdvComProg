@@ -34,17 +34,17 @@
   function setAirColor(aqi){
     if(aqi<= 50){
       document.documentElement.style.setProperty(
-        '--curent-aqi-color','var(--good-aqi--color)'
+        '--current-aqi-color','var(--good-aqi-color)'
       );
     }
     else if(aqi <= 100){
       document.documentElement.style.setProperty(
-        '--curent-aqi-color' , 'var(--medium-aqi-color)'
+        '--current-aqi-color' , 'var(--medium-aqi-color)'
       );
     }
     else{
       document.documentElement.style.setProperty(
-        '--curent-aqi-color', 'var(--bad-aqi-color)'
+        '--current-aqi-color', 'var(--bad-aqi-color)'
       );
     }
   }
@@ -55,7 +55,7 @@
     const country = "Japan";
 
     // const {aqi,temperature,humidity,wind} = await getAirQuality({city,state,country});
-    let aqi = 25
+    let aqi = 10
     let temperature = 10
     let humidity = 59
     let wind = 0.45
