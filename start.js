@@ -55,10 +55,10 @@
     const country = "Japan";
 
     // const {aqi,temperature,humidity,wind} = await getAirQuality({city,state,country});
-    aqi = 25
-    temperature = 10
-    humidity = 59
-    wind = 0.45
+    let aqi = 25
+    let temperature = 10
+    let humidity = 59
+    let wind = 0.45
     displayAirQuality({city,state,country,aqi,temperature,humidity,wind});
 
     setAirColor(aqi);
