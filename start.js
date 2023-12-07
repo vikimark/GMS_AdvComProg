@@ -63,6 +63,11 @@
 
     setAirColor(aqi);
   }
-
+  // Todo
+  // - Debug mode
+  // - Morphing background
+  // - Background changes according to weather (via ic of api)
+  // - Drop down list to select country?
+  // - add little more of animation
   run()
 })();
