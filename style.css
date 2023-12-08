@@ -11,7 +11,7 @@
   --color4: 200, 50, 50;
   --color5: 180, 180, 50;
   --color-interactive: 140, 100, 255;
-  --circle-size: 60%;
+  --circle-size: 80%;
   --blending: hard-light;
 
   /* background: #43cea2;
@@ -223,6 +223,7 @@
   position: absolute;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
