@@ -8,30 +8,48 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <from class = "input">
-      <label>Places</label>
-      <select id = "place">
-        <option value = Nagoya>Nagoya, Aichi, Japan</option>
-      </select>
-    </from>
-    <section>
-      <div class="location">
-        <h1 class="city"></h1>
-        <p class="state-country"></p>
-      </div>
-      <div class="card">
-        <div class="aqi">
-          <h1></h1>
-          <small>US AQI</small>
+    <div class="gradient-bg">
+      <section class="main-section">
+        <from class = "input">
+          <label>Places</label>
+          <select id = "place">
+            <option value = Nagoya>Nagoya, Aichi, Japan</option>
+          </select>
+        </from>
+        <div class="location">
+          <h1 class="city"></h1>
+          <p class="state-country"></p>
         </div>
-        <div class="info">
-          <div class="temperature"></div>
-          <div class="humidity"></div>
-          <div class="wind"></div>
+        <div class="card">
+          <div class="aqi">
+            <h1></h1>
+            <small>US AQI</small>
+          </div>
+          <div class="info">
+            <div class="temperature"></div>
+            <div class="humidity"></div>
+            <div class="wind"></div>
+          </div>
         </div>
+      </section>
+      <svg xmlns="http://www.w3.org/2000/svg" class="gradient-svg">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+        </defs>
+      </svg>
+      <div class="gradients-container">
+        <div class="g1"></div>
+        <div class="g2"></div>
+        <div class="g3"></div>
+        <div class="g4"></div>
+        <div class="g5"></div>
+        <div class="interactive"></div>
       </div>
-    </section>
-
+    </div>
     <script src="./start.js"></script>
   </body>
 </html>
