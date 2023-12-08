@@ -5,12 +5,12 @@
   --current-aqi-color: var(--good-aqi-color);
   --color-bg1: #43cea2;
   --color-bg2: #d16ebc;
-  --color1: 18, 113, 255;
-  --color2: 221, 74, 255;
-  --color3: 100, 220, 255;
+  --color1: 237, 255, 169;
+  --color2: 255, 212, 212;
+  --color3: 250, 238, 231;
   --color4: 200, 50, 50;
-  --color5: 180, 180, 50;
-  --color-interactive: 140, 100, 255;
+  --color5: 255, 139, 167;
+  --color-interactive: 255, 135, 135;
   --circle-size: 80%;
   --blending: hard-light;
 
@@ -234,6 +234,10 @@
 
   /* background: #43cea2;
   background: linear-gradient(45deg, #d16ebc, #54e0b4); */
+}
+
+.main-section .input{
+  padding: 20px 0;
 }
 
 .card {
