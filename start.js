@@ -76,13 +76,24 @@
     })
   }
 
+  function getPlace(){
+    const places = document.getElementById('place'); 
+    const arr = places.split(" ");
+    return{
+      city: arr[0],
+      state: arr[1],
+      country: arr[2]
+    };
+  }
+
   async function run(){
-    const city = "Nagoya";
-    const state = "Aichi";
-    const country = "Japan";
+    const {city,state,country} = getPlace();
+    // const city = "Nagoya";
+    // const state = "Aichi";
+    // const country = "Japan";
 
     // const {aqi,temperature,humidity,wind} = await getAirQuality({city,state,country});
-    let aqi = 10
+    let aqi = 51
     let temperature = 10
     let humidity = 59
     let wind = 0.45
