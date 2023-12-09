@@ -1,16 +1,29 @@
 :root {
   --good-aqi-color: #b0e767;
-  --medium-aqi-color: #fe9b56;
+  --medium-aqi-color: hsl(25, 99%, 67%);
   --bad-aqi-color: #fe6a69;
   --current-aqi-color: var(--good-aqi-color);
   --color-bg1: #43cea2;
   --color-bg2: #d16ebc;
-  --color1: 237, 255, 169;
-  --color2: 255, 212, 212;
-  --color3: 250, 238, 231;
-  --color4: 200, 50, 50;
-  --color5: 255, 139, 167;
-  --color-interactive: 255, 135, 135;
+  /* --color-1: rgb(241, 242, 158);
+  --color-2: rgb(211, 153, 105);
+  --color-3: rgb(164, 82, 35);
+  --color-4: rgb(187, 104, 104);
+  --color-5: rgb(229, 56, 223);
+  --color-interactive-tmp: rgb(255, 97, 179); */
+/* 
+  --color1: 241, 242, 158;
+  --color2: 211, 153, 105;
+  --color3: 239, 108, 108;
+  --color4: 187, 104, 104;
+  --color5: 229, 56, 223;
+  --color-interactive: 255, 97, 179; */
+  --color1:  82, 199, 166;
+  --color2: 105, 181, 170;
+  --color3:  123, 169, 173;
+  --color4:  151, 149, 177;
+  --color5: 180, 130, 181;
+  --color-interactive: 146, 153, 176;
   --circle-size: 80%;
   --blending: hard-light;
 
@@ -123,8 +136,8 @@
 }
 
 .gradient-bg .gradients-container {
-  -webkit-filter: url(#goo) blur(40px);
-          filter: url(#goo) blur(40px);
+  -webkit-filter: url(#goo) blur(30px);
+          filter: url(#goo) blur(30px);
   width: 100%;
   height: 100%;
 }
