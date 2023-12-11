@@ -27,8 +27,8 @@ function displayAirQuality({state,city,country,aqi,temperature,humidity,wind}){
   cityElem.innerText = city;
   stateCountry.innerText = `${state}, ${country}`;
   aqiElem.innerText = aqi;
-  temperatureElem.innerText = `Temp: ${temperature}`;
-  humidityElem.innerText = `Humidity: ${humidity}`;
+  temperatureElem.innerText = `Temp: ${temperature} °C`;
+  humidityElem.innerText = `Humidity: ${humidity} `;
   windElem.innerText = `Wind: ${wind} m/s`;
   
 }
