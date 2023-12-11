@@ -6,11 +6,11 @@ async function run(){
   // const state = "Aichi";
   // const country = "Japan";
 
-  // const {aqi,temperature,humidity,wind} = await getAirQuality({city,state,country});
-  let aqi = 51
-  let temperature = 10
-  let humidity = 59
-  let wind = 0.45
+  const {aqi,temperature,humidity,wind} = await getAirQuality({city,state,country});
+  // let aqi = 51
+  // let temperature = 10
+  // let humidity = 59
+  // let wind = 0.45
   displayAirQuality({city,state,country,aqi,temperature,humidity,wind});
 
   setAirColor(aqi);
