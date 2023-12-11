@@ -178,8 +178,8 @@ select::-ms-expand {
 }
 
 .gradient-bg .gradients-container {
-  -webkit-filter: url(#goo) blur(40px);
-          filter: url(#goo) blur(40px);
+  -webkit-filter: url(#goo) blur(45px);
+          filter: url(#goo) blur(45px);
   width: 100%;
   height: 100%;
 }
@@ -298,6 +298,8 @@ select::-ms-expand {
 .card {
   width: 500px;
   box-shadow: 0 10px 10px 0 #515154;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .aqi {
